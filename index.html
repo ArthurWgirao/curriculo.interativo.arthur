@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Arthur Wagner Girão Muniz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-4xl w-full bg-white shadow-lg rounded-lg p-4 md:p-8">
+        <h1 class="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-6">Arthur Wagner Girão Muniz</h1>
+        <p class="text-center text-gray-700 text-sm md:text-base">Email: arthur58723@gmail.com</p>
+        <p class="text-center text-gray-700 mb-4 md:mb-6 text-sm md:text-base">Telefone: (85) 99625-1688</p>
+        
+        <nav class="flex justify-center space-x-4 md:space-x-4 mb-4 md:mb-6 flex-wrap">
+            <button onclick="showSection('sobre')" class="bg-blue-500 text-white px-2 py-1 rounded-lg hover:bg-blue-700 transition text-sm md:text-base mb-2">Sobre Mim</button>
+            <button onclick="showSection('caracteristicas')" class="bg-blue-500 text-white px-2 py-1 rounded-lg hover:bg-blue-700 transition text-sm md:text-base mb-2">Características</button>
+            <button onclick="showSection('experiencias')" class="bg-blue-500 text-white px-2 py-1 rounded-lg hover:bg-blue-700 transition text-sm md:text-base mb-2">Experiências</button>
+            <button onclick="showSection('habilidades')" class="bg-blue-500 text-white px-2 py-1 rounded-lg hover:bg-blue-700 transition text-sm md:text-base mb-2">Habilidades</button>
+            <button onclick="showSection('formacao')" class="bg-blue-500 text-white px-2 py-1 rounded-lg hover:bg-blue-700 transition text-sm md:text-base mb-2">Formação Acadêmica</button>
+        </nav>
+
+        <section id="sobre" class="hidden mb-4 md:mb-6">
+            <h2 class="text-xl md:text-2xl font-semibold">Sobre Mim</h2>
+            <p class="text-gray-700 text-sm md:text-base">Meu nome é Arthur, tenho 20 anos e sou estudante de Ciência de Dados na Universidade Federal do Ceará (UFC). Sou bastante comunicativo e extrovertido, principalmente quando me acostumo com o lugar e com as pessoas. Sou altamente produtivo em ambientes onde as atividades são bem definidas e os prazos estabelecidos, facilitando a execução das atividades. </p>
+        </section>
+
+        <section id="caracteristicas" class="hidden mb-4 md:mb-6">
+            <h2 class="text-xl md:text-2xl font-semibold">Características</h2>
+            <ul class="list-disc pl-5 text-gray-700 text-sm md:text-base">
+                <li>Habilidade e afinidade com trabalho em equipe</li>
+                <li>Excelente resolutor de problemas</li>
+                <li>Facilidade para aprender e se adaptar com rapidez a novos desafios e conhecimentos</li>
+            </ul>
+        </section>
+
+        <section id="experiencias" class="hidden mb-4 md:mb-6">
+            <h2 class="text-xl md:text-2xl font-semibold">Experiências</h2>
+            <ul class="list-disc pl-5 text-gray-700 text-sm md:text-base">
+                <li>Marketing Virtutis Energy: Responsável pela criação e desenvolvimento de apresentações, pitches e materiais promocionais, voltados tanto para uso institucional quanto para a captação de novos clientes e investidores.</li>
+                <li>Bolsista pelo Projeto RESET: Fui bolsista no projeto RESET (Ressignificando Ética e Sociedade na Era da Tecnologia), onde apoiei o professor em diversas atividades. Além disso, desenvolvi um projeto de Web Scraping utilizando a linguagem Python.</li>
+            </ul>
+        </section>
+
+        <section id="habilidades" class="hidden mb-4 md:mb-6">
+            <h2 class="text-xl md:text-2xl font-semibold">Habilidades</h2>
+            <ul class="list-disc pl-5 text-gray-700 text-sm md:text-base">
+                <li>Python Intermediário: Conhecimento sobre Selenium, Pandas e Numpy</li>
+                <li>SQL Intermediário: Conhecimento acerca de Modelo Relacional, Consultas em Bancos de Dados e Álgebra Relacional</li>
+                <li>Inglês: Avançado</li>
+            </ul>
+        </section>
+
+        <section id="formacao" class="hidden mb-4 md:mb-6">
+            <h2 class="text-xl md:text-2xl font-semibold">Formação Acadêmica</h2>
+            <ul class="list-disc pl-5 text-gray-700 text-sm md:text-base">
+                <li>Ciência de Dados - Universidade Federal do Ceará (Em andamento)</li>
+                <li>Matemática Industrial - Universidade Federal do Ceará (2022-2024)</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('sobre').classList.add('hidden');
+            document.getElementById('caracteristicas').classList.add('hidden');
+            document.getElementById('experiencias').classList.add('hidden');
+            document.getElementById('habilidades').classList.add('hidden');
+            document.getElementById('formacao').classList.add('hidden');
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
